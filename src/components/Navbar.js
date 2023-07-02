@@ -41,13 +41,13 @@ function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<Link to="/risk-register-app" className={styles.logo}>
-				Risk Reverse
+				UDSM Operational Risk Register
 			</Link>
 			<div
 				className={navOpen && width < 768 ? styles.rightActive : styles.right}
 			>
 				<Link to="/risk-register-app">Home</Link>
-				<Link to="/dashboard">Dashboard</Link>
+				<Link to="/Register">Register</Link>
 				<Link to="/contact">Contact</Link>
 				<button onClick={changeDarkMode}>
 					<i

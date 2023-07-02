@@ -135,7 +135,7 @@ function View() {
 				<div className={styles.statsRight}>
 					<div className={styles.rightTop}>
 						<h1>View all</h1>
-						<Link to="/dashboard">Go back</Link>
+						<Link to="/Register">Go back</Link>
 					</div>
 					<div className={styles.rightBottom}>
 						<p className={`${styles.bottomStat} container`}>

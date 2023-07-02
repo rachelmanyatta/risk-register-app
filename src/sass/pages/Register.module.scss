@@ -1,8 +1,8 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-// Dashboard
-.dashboard {
+// Register
+.Register {
 	position: relative;
 	border-radius: 16px;
 	overflow: hidden;
@@ -12,14 +12,14 @@
 }
 
 @media screen and (max-width: 900px) {
-	.dashboard {
+	.Register {
 		border-radius: 0;
 		padding: 2em 2em 2em 8em;
 	}
 }
 
 @media screen and (max-width: 420px) {
-	.dashboard {
+	.Register {
 		padding: 1em 1em 5em 1em;
 	}
 }

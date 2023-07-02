@@ -38,7 +38,7 @@ const Modify = ({ modifyView }) => {
 
 				{/* If no risks, don't show form*/}
 				{riskData.length ? (
-					<>
+					<div>
 						<p>
 							Select the existing name of the risk or click on the View all
 							button and edit there instead.
@@ -174,7 +174,7 @@ const Modify = ({ modifyView }) => {
 									</form>
 								)
 						)}
-					</>
+					</div>
 				) : (
 					<p>
 						You haven't added any risks yet. Please add some and then if you

@@ -11,11 +11,11 @@
 	height: 60px;
 	box-shadow: $mainShadow;
 	.logo {
-		font-family: "Audiowide", cursive;
+		font-family: "System-ui";
 		letter-spacing: 2px;
 		color: white;
 		font-weight: $bold;
-		font-size: 1.5rem;
+		font-size: 2.0rem;
 		padding: 0.5em;
 		transition: $fast;
 		&:hover {

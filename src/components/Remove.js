@@ -38,7 +38,7 @@ const Remove = ({ removeView }) => {
 
 				{/* If no risks, don't show form*/}
 				{riskData.length ? (
-					<>
+					<div>
 						<p>
 							Nice job removing the risk, or if you added it accidentally...
 							well good job anyways.
@@ -77,7 +77,7 @@ const Remove = ({ removeView }) => {
 								className={styles.submitBtn}
 							/>
 						</form>
-					</>
+					</div>
 				) : (
 					<p>
 						Good news! You don't have any risks to remove. If you want to add

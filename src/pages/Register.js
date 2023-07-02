@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import styles from "../sass/pages/dashboard.module.scss";
+import styles from "../sass/pages/Register.module.scss";
 import { Link } from "react-router-dom";
 import DarkModeContext from "../context/DarkModeContext";
 import RiskContext from "../context/RiskContext";
@@ -9,7 +9,7 @@ import Modify from "../components/Modify";
 import Priorities from "../components/Priorities";
 import PieChart from "../components/PieChart";
 
-function Dashboard() {
+function Register() {
 	const { darkMode } = useContext(DarkModeContext);
 	const { riskData, score, getOverallScore, lastUpdatedDate } =
 		useContext(RiskContext);
@@ -101,7 +101,7 @@ function Dashboard() {
 	const HideMenu = add || remove || modify || priorities ? false : true;
 
 	return (
-		<main className={`${styles.dashboard} ${darkMode}`}>
+		<main className={`${styles.Register} ${darkMode}`}>
 			{/* Left Menu */}
 			{HideMenu && (
 				<div className={styles.menu}>
@@ -132,7 +132,7 @@ function Dashboard() {
 			<div className={styles.dash}>
 				<div className={styles.info}>
 					<div className={styles.infoTop}>
-						<h1>Dashboard</h1>
+						<h1>Register</h1>
 						<div className={`${styles.riskLevels} container`}>
 							<div className={styles.level}>
 								<span></span>
@@ -150,7 +150,7 @@ function Dashboard() {
 					</div>
 
 					<p>
-						Use our risk register, a risk management-based methodology for your
+						Use the UDSM operational risk register, a risk management-based methodology for
 						risk management needs. Fulfil regulatory compliance by acting as a
 						repository for all risks identified and including additional
 						information about each risk.
@@ -228,11 +228,11 @@ function Dashboard() {
 					</div>
 					<div className={styles.details}>
 						{riskData.length > 0 ? (
-							<>
+							<div>
 								{riskData.map(
 									(risk, index) => index < 5 && <p key={risk.id}>{risk.name}</p>
 								)}
-							</>
+							</div>
 						) : (
 							<h3>Your top 5 priority risks will appear here</h3>
 						)}
@@ -249,4 +249,4 @@ function Dashboard() {
 	);
 }
 
-export default Dashboard;
+export default Register;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../sass/components/footer.module.scss";
-import duckImg from "../images/duck.svg";
+
 
 function Footer() {
 	// Back To Top Button
@@ -18,21 +18,19 @@ function Footer() {
 
 			<div className={styles.links}>
 				<Link to="/risk-register-app">Home</Link>
-				<Link to="/dashboard">Dashboard</Link>
+				<Link to="/Register">Register</Link>
 				<Link to="/contact">Contact</Link>
 			</div>
 
 			<div className={styles.socials}>
-				<a href="https://www.linkedin.com/in/ahmed-muhammed-/">
+				<a href="https://www.linkedin.com/feed/">
 					<i className={`fab fa-linkedin`}></i>
 				</a>
-				<a href="https://github.com/Ahmed78613">
+				<a href="https://github.com/rachelmanyatta">
 					<i className={`fab fa-github-square`}></i>
 				</a>
 			</div>
-
-			<p>Copyright &copy; 2022 Ahmed Muhammed</p>
-			<img className={styles.duck} src={duckImg} alt="duck flying" />
+			
 		</footer>
 	);
 }

@@ -3,7 +3,7 @@ import "./sass/App.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import Dashboard from "./pages/Dashboard";
+import Register from "./pages/Register";
 import View from "./pages/View";
 import Contact from "./pages/Contact";
 import DarkModeContext from "./context/DarkModeContext";
@@ -18,17 +18,15 @@ function App() {
 	}, [darkMode]);
 
 	return (
-		<>
 			<RiskProvider>
 				<Navbar />
 				<Routes>
 					<Route exact path="/risk-register-app" element={<Home />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/view" element={<View />} />
-					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/Register" element={<Register />} />
 				</Routes>
 			</RiskProvider>
-		</>
 	);
 }
 

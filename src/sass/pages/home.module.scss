@@ -19,6 +19,7 @@
 		width: 90%;
 		h1 {
 			margin-bottom: 1em;
+			font-size: 1.5em;
 		}
 		p {
 			font-size: $paragraph;
@@ -45,13 +46,12 @@
 		right: 0;
 		left: 50%;
 		bottom: 0;
-		border-bottom-left-radius: 50%;
-		background-color: $primary;
+		background-color: #ffff;
 		background-blend-mode: multiply;
-		background-image: url("../../images/risk-banner.jpg");
+		background-image: url("../../images/udsmlogo3.png");
 		background-size: cover;
 		background-position: center;
-		box-shadow: -10px 0 0 rgb(51, 94, 206, 0.3);
+		box-shadow: -10px 0 0 rgba(37, 79, 197, 0.989);
 	}
 }
 

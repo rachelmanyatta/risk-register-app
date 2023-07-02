@@ -9,10 +9,9 @@ function Contact() {
 			<div className={styles.container}>
 				<h1>Contact</h1>
 				<p>
-					This app is solely developed me (Ahmed Muhammed). I would really
-					appreciate it if you could leave some feedback to help me with future
-					updates. You can do this by filling in the form below or contact me on
-					my socials.
+					We would really appreciate it if you could leave some feedback to help us with future
+					updates. You can do this by filling in the form below or contacting us on
+					our socials.
 				</p>
 
 				<form
@@ -28,10 +27,12 @@ function Contact() {
 				</form>
 				<div className={styles.socials}>
 					<button className="container">
-						<i className="fab fa-linkedin"></i>
+					<a href="https://www.linkedin.com/feed/">
+						<i className="fab fa-linkedin"></i></a>
 					</button>
 					<button className="container">
-						<i className="fab fa-github-square"></i>
+					<a href="https://github.com/rachelmanyatta">
+						<i className="fab fa-github-square"></i></a>
 					</button>
 				</div>
 			</div>
