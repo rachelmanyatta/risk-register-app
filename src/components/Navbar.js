@@ -47,7 +47,7 @@ function Navbar() {
 				className={navOpen && width < 768 ? styles.rightActive : styles.right}
 			>
 				<Link to="/risk-register-app">Home</Link>
-				<Link to="/Register">Register</Link>
+				<Link to="/Signup">Register</Link>
 				<Link to="/contact">Contact</Link>
 				<button onClick={changeDarkMode}>
 					<i

@@ -25,7 +25,7 @@ function Home() {
 						manage them with the use of the UDSM risk register. Find, plan and mitigate the risk to stay on
 						top.
 					</p>
-					<Link to="/Register">Register</Link>
+					<Link to="/Signup">Register</Link>
 				</div>
 				<div className={styles.riskImg}></div>
 			</div>
