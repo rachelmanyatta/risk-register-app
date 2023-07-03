@@ -29,7 +29,7 @@ const SignupForm = ({ onSignup }) => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Sign Up</button>
+      <button type="submit"><a href='/Register'>Sign Up</a></button>
       <p>
         Already have an account? <a href="/Login">Login</a>
       </p>

@@ -23,7 +23,7 @@ const LoginForm = ({ onLogin, onForgotPassword, onSignUp }) => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Login</button>
+      <button type="submit"><a href='/Register'>Login</a></button>
       <div>
         <a href="/Forgotpassword" onClick={onForgotPassword}>
           Forgot Password

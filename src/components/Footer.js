@@ -18,7 +18,7 @@ function Footer() {
 
 			<div className={styles.links}>
 				<Link to="/risk-register-app">Home</Link>
-				<Link to="/Register">Register</Link>
+				<Link to="/Signup">Register</Link>
 				<Link to="/contact">Contact</Link>
 			</div>
 
