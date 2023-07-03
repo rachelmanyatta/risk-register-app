@@ -8,6 +8,9 @@ import View from "./pages/View";
 import Contact from "./pages/Contact";
 import DarkModeContext from "./context/DarkModeContext";
 import { RiskProvider } from "./context/RiskContext";
+import Login from '../src/pages/Login'; 
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/Forgotpassword";
 
 function App() {
 	const { darkMode } = useContext(DarkModeContext);
@@ -25,6 +28,9 @@ function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/view" element={<View />} />
 					<Route path="/Register" element={<Register />} />
+					<Route path="/Login" element={<Login />} />
+					<Route path="/Signup" element={<Signup />} />
+					<Route path="/Forgotpassword" element={<ForgotPassword />} />
 				</Routes>
 			</RiskProvider>
 	);
